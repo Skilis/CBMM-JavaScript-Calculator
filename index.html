@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator - CBMM </title>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="back_elements">
+    <!<svg id="svg8" width="1135.5" height="1132.4" version="1.1" viewBox="0 0 300.43 299.61"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs id="defs2">
+        <linearGradient id="linearGradient1048">
+          <stop id="stop1044" style="stop-color:#307672" offset="0" />
+          <stop id="stop1046" style="stop-color:#144d53" offset="1" />
+        </linearGradient>
+        <clipPath id="clipPath870">
+          <rect id="rect872" x="61.015" y="87.414" width="84.738" height="137.74" ry="2.4657"
+            style="fill:#4478ff;opacity:.359" />
+        </clipPath>
+        <linearGradient id="linearGradient1050" x1="-125.26" x2="34.796" y1="102.96" y2="284.22"
+          gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1048" />
+        <linearGradient id="linearGradient1058" x1="-149.59" x2="50.17" y1="90.294" y2="311.52"
+          gradientUnits="userSpaceOnUse" xlink:href="#linearGradient1048" />
+      </defs>
+      <g id="layer1" transform="translate(192.17 -45.092)">
+        <path id="circle1041"
+          d="m107.14 194.29c11.09 81.644-61.627 135.9-149.19 149.19-78.743 11.949-139.5-65.135-149.19-149.19-10.322-89.536 66.412-150.16 149.19-149.19 81.951 0.96316 138.92 73.635 149.19 149.19z"
+          style="fill:url(#linearGradient1058);opacity:.678" />
+        <circle id="path1039" cx="-41.956" cy="194.9" r="126.33" style="fill:url(#linearGradient1050)" />
+      </g>
+      </svg>
+
+  </div>
+
+  <div class="container VTA-h calculator">
+    <div class="contain">
+
+      <div class="row screen  no-pad">
+
+        <div class="tooltipblock">
+          <div class="tiptext"><span>Priority rule:</span>
+            <span class="">
+              <span class="OFF">OFF 2+3x2=10</span>
+              <span class="ON">ON 2+(3x2)=8 </span>
+            </span>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label></div>
+
+          <span class="PS"> No mouse? Use your keyboard!</span>
+        </div>
+
+        <div class="col-xs-4 info"><i class="fa fa-cog tip"></i>
+        </div>
+        <div class="col-xs-8 memory text-right ">MEMORY</div>
+        <div class="col-xs-12 control-screen text-right">0</div>
+      </div>
+
+      <div class="blur row no-pad"></div>
+      <div class="row controler">
+        <div class="col-xs-12 no-pad">
+          <div class="row control">
+            <div class="col-xs-12">
+              <div class="btn-res-block">
+                <div class="col-xs-3 no-pad">
+                  <button type="button" class="btn btn-res btn-block">AC</button>
+                </div>
+                <div class="col-xs-3 no-pad">
+                  <button type="button" class="btn btn-res btn-block">CE</button>
+                </div>
+              </div>
+              <div class="col-xs-3 no-pad"><button type="button" class="btn btn-block" id="cube">x²</button></div>
+              <div class="col-xs-3 no-pad"><button type="button" class="btn btn-block" id="sqrt">√</button></div>
+            </div>
+
+          </div>
+          <div class="row main">
+            <div class="col-xs-9 number text-center">
+              <div class="row">
+                <div class="col-xs-4"><button type="button" class="btn btn-block">7</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">8</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">9</button></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4"><button type="button" class="btn btn-block">4</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">5</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">6</button></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4"><button type="button" class="btn btn-block">1</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">2</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">3</button></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4"><button type="button" class="btn btn-block">±</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">0</button></div>
+                <div class="col-xs-4"><button type="button" class="btn btn-block">.</button></div>
+              </div>
+            </div>
+            <div class="col-xs-3 operator no-pad">
+              <button type="button" class="btn btn-block">x</button>
+              <button type="button" class="btn btn-block">÷</button>
+              <button type="button" class="btn btn-block">+</button>
+              <button type="button" class="btn btn-block">-</button>
+            </div>
+          </div>
+          <div class="row submit-row">
+            <div class="col-xs-10 col-xs-offset-1"><button type="button" class="btn btn-block">=</button></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
