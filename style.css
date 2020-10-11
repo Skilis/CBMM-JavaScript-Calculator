@@ -1,0 +1,334 @@
+/*rgba(20, 143, 119,0.5)*/
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.VTA {
+  /*VERTICAL ALIGN*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  height: 100%;
+  font-family: "Bradley Hand", cursive;
+  background: rgb(134, 54, 133);
+  background: linear-gradient(135deg, #ad3700 0%, #8f0222 44%, #4b0052 100%);
+}
+
+#back_elements {
+  position: absolute;
+  top: -80%;
+  left: -50%;
+  transform: scale(0.5);
+}
+
+#back_elements_2 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: scale(0.5);
+}
+
+.container {
+  font-size: 1.7em;
+  width: 400px;
+  overflow: hidden;
+  background: #f0b7a1;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg,
+      #f0b7a1 0%,
+      #8c3310 31%,
+      #752201 67%,
+      #bf6e4e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,
+      #f0b7a1 0%,
+      #8c3310 31%,
+      #752201 67%,
+      #bf6e4e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,
+      #f0b7a1 0%,
+      #8c3310 31%,
+      #752201 67%,
+      #bf6e4e 100%);
+  border-radius: 10px;
+  /*Vertical Align*/
+  position: relative;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.bluroverlay {
+  position: relative;
+}
+
+/*.blur{
+  top:0;
+  left:0;
+  position:absolute;
+  height:120%;
+  width:120%;
+  background:url("http://res.cloudinary.com/crakerss/image/upload/c_crop,g_center,q_20,w_2431/v1502988207/background_conifer/SAMSC.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(15px);
+}*/
+.controler {
+  padding-top: 20px;
+}
+
+.info {
+  padding-left: 10px;
+  padding-top: 6px;
+}
+
+.screen {
+  border-bottom: solid 1px white;
+  z-index: 1;
+  box-shadow: 0 0 10px;
+  height: 130px;
+  position: relative;
+  background: #fafafa;
+}
+
+.control-screen {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  font-size: 2.2em;
+  height: 75px;
+}
+
+.control {
+  margin: 10px;
+}
+
+.main {
+  margin: 0;
+}
+
+.number .row .col-xs-4 {
+  padding: 0;
+}
+
+/*BUTTON*/
+button {
+  border-radius: 0 !important;
+  font-size: 1.5em !important;
+  height: 70px;
+  margin: 0 !important;
+  color: white;
+  background: none;
+  transition: outline 1s;
+}
+
+button:hover {
+  color: #d5d8dc !important;
+  background: rgba(20, 143, 119, 0.5);
+}
+
+button:focus {
+  outline-color: rgb(20, 143, 119) !important;
+}
+
+.operator button {
+  background: rgba(20, 143, 119, 0.5);
+}
+
+.operator button:first-child {
+  border-top-left-radius: 6px !important;
+}
+
+.operator button:last-child {
+  border-bottom-left-radius: 6px !important;
+}
+
+.submit-row {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.submit-row div button {
+  background: rgba(20, 143, 119, 0.5);
+  /*border:solid 1px #407542;*/
+  border-radius: 4px !important;
+}
+
+.btn-res {
+  background: rgba(114, 129, 126, 0.8);
+}
+
+.btn-res-block div:first-child button {
+  border-radius: 6px 0 0 6px !important;
+}
+
+.btn-res-block div:last-child button {
+  border-radius: 0 6px 6px 0 !important;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  vertical-align: middle;
+  right: 10px;
+  top: 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.tip {
+  position: relative;
+  cursor: pointer;
+  color: grey;
+  z-index: 2;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s, color 0.5s;
+}
+
+.tip:hover {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transform: translateZ(0);
+
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  transform: rotate(90deg);
+  color: rgb(20, 143, 119);
+}
+
+.tooltipblock {
+  position: absolute;
+  font-size: 1em;
+  font-family: "Poiret One", arial;
+  display: none;
+  padding: 5px !important;
+  width: 100%;
+  background-color: #144d53;
+  color: white;
+  vertical-align: middle;
+  padding: 5px;
+  border-radius: 0px;
+  height: 100px;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  margin-top: 130px;
+}
+
+input:checked+.slider {
+  background-color: rgb(143, 20, 123);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.tiptext {
+  margin-top: 8px;
+}
+
+.ON {
+  display: none;
+  width: 120px;
+  color: #a7d5cc;
+}
+
+.PS {
+  position: absolute;
+  bottom: 5px;
+}
+
+@media screen and (max-height: 650px) {
+  .calculator {
+    transform: scale(1);
+    position: initial;
+    margin: auto;
+    top: 0 !important;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-height: 650px) {
+  .VTA-h {
+    /*VERTICAL ALIGN*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
